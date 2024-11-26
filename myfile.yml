@@ -1,5 +1,5 @@
 ---
-- name: create afile
-  file:
-    path: /home/maha/myfirstfile
-    state: touch
+  - name: create afile
+    file:
+      path: /home/maha/myfirstfile
+      state: touch
