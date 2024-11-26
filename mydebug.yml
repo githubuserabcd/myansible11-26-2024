@@ -13,3 +13,8 @@
       name: tree
       state: present 
     when: myfirsttaskresult.stderr==""
+  - name: install git
+    apt: 
+      name: git
+      state: present 
+    when: myfirsttaskresult.stderr==""
