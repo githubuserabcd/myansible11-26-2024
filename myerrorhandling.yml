@@ -1,0 +1,16 @@
+---
+- hosts: 10.0.0.5
+  become: yes
+  tasks: 
+  - name: install tree
+    apt:
+     name: tree
+     state: present 
+  - name: install git
+    apt: 
+      name: git
+      statee: present 
+  - name: install wget 
+    apt: 
+      name: wget
+      state: present 
