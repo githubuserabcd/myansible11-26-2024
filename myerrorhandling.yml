@@ -10,6 +10,7 @@
     apt: 
       name: git
       statee: present 
+    ignore_errors: true
   - name: install wget 
     apt: 
       name: wget
