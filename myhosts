@@ -1,8 +1,4 @@
 
-
-
-
-
 [mywebservers]
 10.0.0.5
 
@@ -11,3 +7,8 @@
 
 [myDBservers]
 10.0.0.7
+
+
+[mywebservers:vars]
+var01= value
+mywebpackonubuntu= apache2
