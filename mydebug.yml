@@ -8,3 +8,8 @@
   - name: i want to debug first task result
     debug: 
       msg: "{{myfirsttaskresult}}"
+  - name: install tree
+    apt: 
+      name: tree
+      state: present 
+    when: myfirsttaskresult.stderr==""
