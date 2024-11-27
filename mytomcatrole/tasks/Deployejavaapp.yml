@@ -1,0 +1,6 @@
+---
+- name: download java applicaton war file into webapps
+  get_url:
+     url: https://mystorageaccount11272024.blob.core.windows.net/myfolder/mahaLogin-2.0.war
+     dest: /opt/tomcat/webapps/mahaLogin-2.0.war
+     force_basic_auth: yes
